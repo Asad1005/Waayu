@@ -1,0 +1,94 @@
+﻿@{
+    ViewData["Title"] = "Contact Us";
+}
+
+
+
+
+<div style="display:flex;">
+
+    <div class="content" style="display:flex;flex-direction:column;justify-content:center;align-items:center;margin-right:50px">
+     <h3>Our App Interface</h3>
+
+        <a href="#">Click here to get our app</a>
+    </div>
+    
+<div class="slide" style="width:200px" >
+    
+    <img class="mySlides" src="~/img/screen1.png" >
+    <img class="mySlides" src="~/img/screen2.png" >
+    <img class="mySlides" src="~/img/screen3.png" >
+    <img class="mySlides" src="~/img/screen4.png" >
+
+    
+</div>
+
+
+
+
+</div>
+
+<br>
+<br>
+
+<div style="display:flex;justify-content:end">
+    <div class="content" style="display:flex;flex-direction:column;justify-content:center;align-items:center;margin-right:50px">
+        <h3>Our Accomplishment</h3>
+        <p style="text-align:justify">We team Waayu made it to the finals of <br><span style="color:orange;font-size:20px;">SMART INDIA HACKATHON 2022</span><br>through our consistent efforts towards innovation and we couldn’t be more thrilled! Our journey was not easy, but our unwavering commitment and passion for innovation kept us going. We spent countless hours brainstorming, coding, and debugging, fueled by the belief that our ideas could make a difference.</p>
+        
+    </div>
+    
+    <img src="~/img/event2.png"></img>
+
+</div>
+
+@*VIDEO DIV*@
+@* <div>
+
+<video width="300" height="200" controls>
+
+    <source src="~/img/waayu_intro.mp4" type="video/mp4">
+    Not Supported
+</video>
+
+</div> *@
+
+<script>
+    var myIndex = 0;
+    carousel();
+    var myinterval;
+    function carousel() {
+        var i;
+        var x = document.getElementsByClassName("mySlides");
+        for (i = 0; i < x.length; i++) {
+            x[i].style.display = "none";
+        }
+        myIndex++;
+        if (myIndex > x.length) { myIndex = 1 }
+        x[myIndex - 1].style.display = "block";
+       setTimeout(carousel, 2000); // Change image every 2 seconds
+    }
+
+    
+
+    
+</script>
+
+<style>
+    .mySlides{
+        width:200px;
+        height:400px;
+    }
+
+    img{
+        width:500px;
+        height:300px;
+    }
+
+   .content{
+       font-family:'Century Gothic';
+   }
+    
+   
+    
+</style>

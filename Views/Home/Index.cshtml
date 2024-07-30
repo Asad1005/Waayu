@@ -1,0 +1,149 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<style>
+
+    
+
+    .card{
+        position:relative;
+        overflow:hidden;
+        height:450px;
+        
+    }
+
+    .card>img
+    {
+            width: 100%;
+            height: 100%;
+            transition: all 0.3s;
+
+        }
+
+    .content
+    {
+        position:absolute;
+        bottom:-100px;
+        left:10px;
+        color:white;
+        transition: all 0.3s;
+    }
+    .card:hover .content
+    {
+        bottom:200px;
+    }
+
+    .card:hover img{
+    filter:brightness(0.6);
+    }
+
+
+    .content h3{
+        font-family:'Century Gothic';
+        font-size:50px;
+        
+    }
+
+
+    /* CSS FOR SECOND DIV */
+
+    .card1{
+        position: relative;
+        overflow: hidden;
+        height: 450px;
+
+    }
+
+    .card1> img {
+        width: 100%;
+        height: 100%;
+        transition: all 0.3s;
+    }
+
+    .content1 {
+        
+        position: absolute;
+        bottom: -600px;
+        left: 10px;
+        color: white;
+        transition: all 0.3s;
+    }
+
+
+    .container1{
+        position: relative;
+        overflow: hidden;
+        height: 450px;
+    }
+
+    .container1:hover .content1 {
+        bottom: 80px;
+    }
+
+    .card1:hover img {
+        filter: brightness(0.6);
+    }
+
+
+    .content1 p {
+        font-family: 'Century Gothic';
+        font-size: 15px;
+    }
+
+
+
+
+</style>
+
+<div class="container">
+    <div class="card">
+    <img src="~/css/yoga_background.jpg">
+    <div class="content">
+
+        <h3>Welcome</h3>
+            <p><i>to the world of Yoga</i></p>
+
+    </div>
+
+
+    </img>
+    
+   
+
+
+
+
+
+    </div>
+</div>
+
+<br>
+<br>
+
+<div class="container1 justify-content-end d-flex">
+<div class="card1">
+<img src="~/img/background1.jpg"></img>
+</div>
+    <div class="content1" style="width:500px">
+
+        <p style="text-align:justify">
+
+            Yoga Asanas, the physical postures of Yoga, are a key component of the path to wellbeing. Originating from ancient India, these practices are designed to bring balance, strength, and tranquility to the practitioner.
+            Each Asana targets specific parts of the body, helping to strengthen muscles, improve flexibility, and enhance overall health. Regular practice can lead to significant improvements in physical and mental health, including reduced stress, improved concentration, increased energy, and a stronger immune system.
+            Our website offers a comprehensive guide to Yoga Asanas, suitable for beginners and experienced practitioners alike. We provide detailed instructions, benefits, and modifications for each pose, ensuring a safe and effective practice.
+            Embark on your journey to wellbeing with Yoga Asanas today. Experience the transformative power of Yoga and embrace a healthier, more balanced life.<span style="font-size:25px;color:orange">Join us now!</span>
+        </p>
+
+
+
+
+
+</div>
+
+
+
+</div>
+
+
+

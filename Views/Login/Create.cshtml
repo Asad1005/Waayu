@@ -1,0 +1,66 @@
+﻿@model Interim.Models.Singup
+
+@{
+    ViewData["Title"] = "Create";
+}
+
+
+<form method="post" asp-action="Create">
+
+<div style="margin-left:25%;margin-top:20px">
+    <h1 style="font-size:30px;">Wel<span style="color:orange">come</span></h1>
+<div style="width:500px;height:400px;justify-content:center">
+
+    <!-- Email input -->
+    
+    <div class="form-outline mb-4">
+        <input type="email" id="form2Example1" class="form-control" value="@TempData["UserEmail"]" asp-for="Email"/>
+        <label class="form-label" for="form2Example1" asp-for="Email" >Email address</label>
+                <span asp-validation-for="Email" class="text-danger"></span>
+    </div>
+
+    <!-- Password input -->
+    <div class="form-outline mb-4">
+                <input type="password" id="form2Example2" class="form-control" asp-for="Password" />
+                <label class="form-label" for="form2Example2" asp-for="Password">Password</label>
+                <span asp-validation-for="Password" class="text-danger">@TempData["wrongPassword"]</span>
+    </div>
+
+    <!-- 2 column grid layout for inline styling -->
+    <div class="row mb-4">
+        <div class="col d-flex justify-content-center">
+            <!-- Checkbox -->
+            <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="form2Example31" checked />
+                <label class="form-check-label" for="form2Example31"> Remember me </label>
+            </div>
+        </div>
+
+        <div class="col">
+            <!-- Simple link -->
+            <a href="#!">Forgot password?</a>
+        </div>
+    </div>
+
+    <!-- Submit button -->
+    <button type="submit" class="btn btn-primary btn-block mb-4" style="width:100%;background-color:orange;color:black">Sign in</button>
+
+    <!-- Register buttons -->
+    <div class="text-center">
+        <p>Not a member? <a  asp-controller="Singup" asp-action="Create">Register</a></p>
+
+    </div>
+
+</div>
+</div>
+</form>
+
+
+
+
+
+
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

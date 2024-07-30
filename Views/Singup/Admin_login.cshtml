@@ -1,0 +1,38 @@
+﻿@model Interim.Models.Singup
+@{
+    ViewData["Title"] = "About Us";
+}
+
+
+<form method="post" asp-action="Admin_login">
+
+    <div style="margin-left:25%;margin-top:20px">
+        <h1 style="font-size:30px;">Wel<span style="color:orange">come</span></h1>
+        <div style="width:500px;height:400px;justify-content:center">
+
+            <!-- Email input -->
+            <h1 style="color:red">@TempData["errorPassword"]</h1>
+            <div class="form-outline mb-4">
+                <input type="email" id="form2Example1" class="form-control" value="@TempData["UserEmail"]" asp-for="Email" />
+                <label class="form-label" for="form2Example1" asp-for="Email">Email address</label>
+                <span asp-validation-for="Email" class="text-danger"></span>
+            </div>
+
+            <!-- Password input -->
+            <div class="form-outline mb-4">
+                <input type="password" id="form2Example2" class="form-control" asp-for="Password" />
+                <label class="form-label" for="form2Example2" asp-for="Password">Password</label>
+                <span asp-validation-for="Password" class="text-danger"></span>
+            </div>
+
+           
+
+            <!-- Submit button -->
+            <button type="submit" class="btn btn-primary btn-block mb-4" style="width:100%;background-color:orange;color:black">Sign in</button>
+
+            
+
+        </div>
+    </div>
+</form>
+

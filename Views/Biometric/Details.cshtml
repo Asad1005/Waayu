@@ -1,0 +1,367 @@
+﻿@model Interim.Models.Biometric
+
+@{
+    ViewData["Title"] = "Details";
+    Layout = "_Layout-main";
+
+
+}
+@* <center>
+    <div class="Aasans" style="background-color:white;width:100%;height:400px;margin-top:30px;display:flex;justify-content:center;align-items:center;">
+
+        <div style="width:200px;height:200px;background-color:red;margin:15px;">
+            
+        <img src="~/css/background1.jpg" style="width:200px;height:200px"></img>    
+        </div>
+        <div style="width:200px;height:200px;background-color:red;margin:15px"> 
+            <h1 id="bmi" style="color:black"></h1>
+        </div>
+        <div style="width:200px;height:200px;background-color:red;margin:15px"> </div>
+
+</div>
+</center> *@
+<div class="d-flex justify-content-center" style="font-family:'Century Gothic'">
+    <h4>According to your BMI: <span id="bmi" style="color:orange"></span></h4><br>
+    
+</div>
+<div class="d-flex justify-content-center" style="font-family:'Century Gothic'">
+   
+    <h4>You lie in the category of: <span id="category" style="color:orange"></span></h4>
+</div>
+
+<br>
+
+
+<div id="Underweight" style="outline-color:orange">
+
+
+    <div class="block1 d-flex" style="width:100%; display: flex;border:2px solid orange;border-radius:15px;padding:10px">
+
+    <div class="block1" style="width:300px;height:250px;position:relative">
+        <img src="~/img/chakrasan.png" style="width:300px;height:250px"></img>
+    </div>
+
+    <div class="content" style="text-align:justify-all;margin-left:15px;font-family:'Century Gothic'">
+        <p>
+            <span style="font-size:20px"><b>Benefits: Chakrasana ensures good blood circulation to all parts of the body and increases the flexibility of the spine. It also strengthens the arms, shoulders, hips, thighs, and wrists.</b></span>
+            <br>
+            How to do it:<br>
+            1.Start by lying down on your back.<br>
+            2.Place your hands behind your shoulders.<br>
+            3.Slowly raise your body with the support of your palms and feet, creating an arch.<br>
+            4.Stay in this position as long as you’re comfortable, focusing on your breath.<br>
+            5.Gently lower your body afterward.<br>
+
+             <span class="text-danger">Tip: Avoid excessive force to prevent strain on your arms.</span>
+        </p>
+    </div>
+
+</div>
+
+    <br>
+
+    <div class="block2 d-flex" style="width:100%; display: flex;border:2px solid orange;border-radius:15px;padding:10px">
+
+        <div class="block1" style="width:300px;height:250px;position:relative">
+            <img src="~/img/dhanurasan.png" style="width:300px;height:250px"></img>
+        </div>
+
+        <div class="content" style="text-align:justify-all;margin-left:15px;font-family:'Century Gothic'">
+            <p>
+                <span style="font-size:20px"><b>Benefits: Dhanurasana strengthens the back and abdominal muscles. It massages the thyroid gland, improves digestion, and stimulates the reproductive organs.</b></span>
+                <br>
+                How to do it:<br>
+                1.Lie on your stomach with feet apart.<br>
+                2.Fold your knees and take your hands behind, holding your ankles.<br>
+                3.Lift your chest and look straight ahead.<br>
+                4.Stay in this position for 30-60 seconds, focusing on deep breathing.<br>
+
+
+                <span class="text-danger">Tip: Not recommended for those with heart issues or high blood pressure.</span>
+            </p>
+        </div>
+
+    </div>
+
+    <br>
+
+    <div class="block3 d-flex" style="width:100%; display: flex;border:2px solid orange;border-radius:15px;padding:10px">
+
+        <div class="block1" style="width:300px;height:250px;position:relative">
+            <img src="~/img/bhujangasan.png" style="width:300px;height:250px"></img>
+        </div>
+
+        <div class="content" style="text-align:justify-all;margin-left:15px;font-family:'Century Gothic'">
+            <p>
+                <span style="font-size:20px"><b>Benefits: Bhujangasana stretches the muscles in the shoulder, back, abdominal, and neck regions. It improves digestion, metabolism, and nutrient absorption.</b></span>
+                <br>
+                How to do it:<br>
+                1.Lie flat on your stomach with legs stretched out.<br>
+                2.Keep your elbows on your sides and palms flat on the surface.<br>
+                3.Take a deep breath, lift your chest and abdomen, placing body weight on the palms.<br>
+
+
+                <span class="text-danger">Tip: Practice with awareness and avoid straining your neck.</span>
+            </p>
+        </div>
+
+    </div>
+
+
+
+
+
+</div>
+
+
+<div id="Overweight">
+
+
+    <div class="block1 d-flex" style="width:100%; display: flex;border:2px solid orange;border-radius:15px;padding:10px">
+
+        <div class="block1" style="width:300px;height:250px;position:relative">
+            <img src="~/img/sukhasana.png" style="width:300px;height:250px"></img>
+        </div>
+
+        <div class="content" style="text-align:justify-all;margin-left:15px;font-family:'Century Gothic'">
+            <p>
+                <span style="font-size:20px">
+                    <b>
+                        Benefits: Reduces anxiety, stress, and mental fatigue.Corrects body posture and stretches the chest and spine.
+                    </b>
+                </span>
+                <br>
+                How to do it:<br>
+                1.Sit with legs tucked inside opposite thighs.<br>
+                2.Keep the spine straight.<br>
+                3.Place hands on knees and breathe gently.<br>
+
+
+                <span class="text-danger">
+                    Tip: Focus on relaxation and comfort.
+                </span>
+            </p>
+        </div>
+
+    </div>
+
+    <br>
+
+    <div class="block2 d-flex" style="width:100%; display: flex;border:2px solid orange;border-radius:15px;padding:10px">
+
+        <div class="block1" style="width:300px;height:250px;position:relative">
+            <img src="~/img/tadasana.png" style="width:300px;height:250px"></img>
+        </div>
+
+        <div class="content" style="text-align:justify-all;margin-left:15px;font-family:'Century Gothic'">
+            <p>
+                <span style="font-size:20px">
+                    <b>
+                        Benefits: Strengthens leg muscles.Improves posture and body alignment.Increases height in children.
+                    </b>
+                </span>
+                <br>
+                How to do it:<br>
+                1.Stand with heels and toes joined.<br>
+                2.Raise arms up and look straight ahead.<br>
+                3.Lift heels and balance on toes.<br>
+
+
+
+                <span class="text-danger">
+                    Tip: Engage core muscles for stability
+                </span>
+            </p>
+        </div>
+
+    </div>
+
+    <br>
+
+    <div class="block3 d-flex" style="width:100%; display: flex;border:2px solid orange;border-radius:15px;padding:10px">
+
+        <div class="block1" style="width:300px;height:250px;position:relative">
+            <img src="~/img/adhomukha.png" style="width:300px;height:250px"></img>
+        </div>
+
+        <div class="content" style="text-align:justify-all;margin-left:15px;font-family:'Century Gothic'">
+            <p>
+                <span style="font-size:20px">
+                    <b>
+                        Benefits: Stretches entire body.Improves circulation and energizes.Relieves stress and tension.
+                    </b>
+                </span>
+                <br>
+                How to do it:<br>
+                1.Form an inverted V shape with body.<br>
+                2.Press heels toward the ground.<br>
+
+
+
+                <span class="text-danger">Tip: Keep shoulders away from ears.</span>
+            </p>
+        </div>
+
+    </div>
+
+
+
+
+
+</div>
+
+
+<div id="Healthy">
+
+
+    <div class="block1 d-flex" style="width:100%; display: flex;border:2px solid orange;border-radius:15px;padding:10px">
+
+        <div class="block1" style="width:300px;height:250px;position:relative">
+            <img src="~/img/sukhasana.png" style="width:300px;height:250px"></img>
+        </div>
+
+        <div class="content" style="text-align:justify-all;margin-left:15px;font-family:'Century Gothic'">
+            <p>
+                <span style="font-size:20px">
+                    <b>
+                        Benefits: Reduces anxiety, stress, and mental fatigue.Corrects body posture and stretches the chest and spine.
+                    </b>
+                </span>
+                <br>
+                How to do it:<br>
+                1.Sit with legs tucked inside opposite thighs.<br>
+                2.Keep the spine straight.<br>
+                3.Place hands on knees and breathe gently.<br>
+
+
+                <span class="text-danger">
+                    Tip: Focus on relaxation and comfort.
+                </span>
+            </p>
+        </div>
+
+    </div>
+
+    <br>
+
+    <div class="block2 d-flex" style="width:100%; display: flex;border:2px solid orange;border-radius:15px;padding:10px">
+
+        <div class="block1" style="width:300px;height:250px;position:relative">
+            <img src="~/img/tadasana.png" style="width:300px;height:250px"></img>
+        </div>
+
+        <div class="content" style="text-align:justify-all;margin-left:15px;font-family:'Century Gothic'">
+            <p>
+                <span style="font-size:20px">
+                    <b>
+                        Benefits: Strengthens leg muscles.Improves posture and body alignment.Increases height in children.
+                    </b>
+                </span>
+                <br>
+                How to do it:<br>
+                1.Stand with heels and toes joined.<br>
+                2.Raise arms up and look straight ahead.<br>
+                3.Lift heels and balance on toes.<br>
+
+
+
+                <span class="text-danger">
+                    Tip: Engage core muscles for stability
+                </span>
+            </p>
+        </div>
+
+    </div>
+
+    <br>
+
+    <div class="block3 d-flex" style="width:100%; display: flex;border:2px solid orange;border-radius:15px;padding:10px">
+
+        <div class="block1" style="width:300px;height:250px;position:relative">
+            <img src="~/img/adhomukha.png" style="width:300px;height:250px"></img>
+        </div>
+
+        <div class="content" style="text-align:justify-all;margin-left:15px;font-family:'Century Gothic'">
+            <p>
+                <span style="font-size:20px">
+                    <b>
+                        Benefits: Stretches entire body.Improves circulation and energizes.Relieves stress and tension.
+                    </b>
+                </span>
+                <br>
+                How to do it:<br>
+                1.Form an inverted V shape with body.<br>
+                2.Press heels toward the ground.<br>
+
+
+
+                <span class="text-danger">Tip: Keep shoulders away from ears.</span>
+            </p>
+        </div>
+
+    </div>
+
+
+
+
+
+</div>
+
+
+@* waayu logo *@
+    @* <div class="block1">
+    <img src="~/img/waayu.png"></img>
+    
+    </div> *@
+
+    <div class="block1">
+   
+    
+    </div>
+
+
+        <script>
+    var urlParams = new URLSearchParams(window.location.search);
+    var bmi = urlParams.get('BMI');
+
+    document.getElementById('bmi').textContent =  bmi;
+
+            if (bmi >= 18 && bmi < 25) {
+                document.getElementById('category').textContent = "Healthy Weight";
+                document.getElementById('Underweight').style.display = "none";
+                document.getElementById('Healthy').style.display = "block";
+                document.getElementById('Overweight').style.display = "none";
+
+
+            }
+
+            else if (bmi < 18) {
+                document.getElementById('category').textContent = "Under Weight";
+        document.getElementById('Underweight').style.display = "block";
+                document.getElementById('Healthy').style.display = "none";
+                document.getElementById('Overweight').style.display = "none";
+            }
+
+            else if (bmi >= 25 && bmi < 30) {
+                document.getElementById('category').textContent = "Over Weight";
+                document.getElementById('Underweight').style.display = "none";
+                document.getElementById('Healthy').style.display = "none";
+        document.getElementById('Overweight').style.display = "block";
+            }
+
+            else if (bmi >= 30 && bmi<40) {
+        document.getElementById('category').textContent = "Obesity";
+        document.getElementById('Underweight').style.display = "none";
+        document.getElementById('Healthy').style.display = "none";
+        document.getElementById('Overweight').style.display = "block";
+            }
+
+
+    else if (bmi >= 40) {
+        document.getElementById('category').textContent = "Severe Obesity, kindly consult a doctor in person";
+        document.getElementById('Underweight').style.display = "none";
+        document.getElementById('Healthy').style.display = "none";
+        document.getElementById('Overweight').style.display = "block";
+    }
+
+</script>
