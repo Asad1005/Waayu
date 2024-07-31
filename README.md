@@ -10,7 +10,7 @@ Waayu is an ASP.NET MVC-based web application that collects health metrics from 
 # Features
 * **Personalized Yoga Plans:** Based on the user’s health metrics and fitness goals, the application could generate personalized yoga plans. This could include a schedule, specific asanas to focus on, and progress tracking.
 * **Instructional Videos:** For each suggested yoga asana, provide instructional videos or animations within the app to guide users on how to correctly perform the asana.
-* Integration with Wearable Devices: The application could sync with wearable devices to track the user’s health metrics in real-time. This would allow for more accurate and timely recommendations.
+* **Integration with Wearable Devices**: The application could sync with wearable devices to track the user’s health metrics in real-time. This would allow for more accurate and timely recommendations.
 * **Community Feature:** A platform within the app where users can share their progress, experiences, and tips. This could also include features for users to challenge each other in friendly competitions.
 * **Diet Recommendations:** Along with yoga asanas, the application could suggest diet plans based on the user’s health metrics and fitness goals.
 * **Reminders and Notifications:** The application could send reminders for yoga sessions and provide notifications about progress updates.
